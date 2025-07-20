@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SV Naturals | Green Gram Soap – Natural Glow & Gentle Care</title>
+  <link rel="stylesheet" href="soap.css" />
+</head>
+<body>
+
+  <div class="top-nav">
+    <div class="logo">SV NATURALS</div>
+    <a href="/svnaturalss/mind.html">Home</a>
+  </div>
+
+  <div class="container">
+    <h1>🌿 Green Gram Soap – Natural Glow & Gentle Care</h1>
+    <div class="highlight">
+      <p>
+        Discover the magic of nature with our handcrafted <strong>Green Gram Soap</strong>, enriched with the wholesome goodness of mung bean and a nourishing blend of natural oils.
+      </p>
+    </div>
+
+    <section id="products1">
+      <div class="product-grid">
+        <div class="product-card" onclick="openModal('/SVNaturals/images/Green Gram.jpg')">
+          <img src="/svnaturalss/images/Green Gram.jpg" alt="Green Gram Natural Bar Soap">
+        </div>
+        <div class="product-card" onclick="openModal('/SVNaturals/images/redwine2.jpg')">
+          <img src="/svnaturalss/images/redwine2.jpg" alt="Red Wine Natural Bar Soap">
+        </div>
+        <div class="product-card" onclick="openModal('/SVNaturals/images/goatmilk.jpg')">
+          <img src="/svnaturalss/images/goatmilk.jpg" alt="Goat Milk Natural Bar Soap">
+        </div>
+        <div class="product-card" onclick="openModal('/SVNATURALS/images/ricesoap.jpg')">
+          <img src="/svnaturalss/images/ricesoap.jpg" alt="Rice Natural Bar Soap">
+        </div>
+        <div class="product-card" onclick="openModal('/SVNaturals/images/papaya.jpg')">
+          <img src="/svnaturalss/images/papaya.jpg" alt="Papaya Natural Bar Soap">
+        </div>
+        <div class="product-card" onclick="openModal('/SVNaturals/images/charcoal.jpg')">
+          <img src="/svnaturalss/images/charcoal.jpg" alt="Charcoal Natural Bar Soap">
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+
+    <h2>Key Benefits</h2>
+    <ul>
+      <li><strong>Natural Exfoliation:</strong> Removes dead skin cells and unclogs pores.</li>
+      <li><strong>Deep Hydration:</strong> Coconut and olive oils nourish the skin.</li>
+      <li><strong>Brightening Formula:</strong> Evens out skin tone and reduces dark spots.</li>
+      <li><strong>Soothing Action:</strong> Calms irritation—great for sensitive skin.</li>
+      <li><strong>Hair Growth Control:</strong> May reduce fine facial hair.</li>
+      <li><strong>Anti-Aging Support:</strong> Antioxidants fight premature aging.</li>
+    </ul>
+
+    <h2>Ingredients</h2>
+    <ul>
+      <li><strong>Green Gram:</strong> Exfoliates and brightens skin.</li>
+      <li><strong>Coconut Oil:</strong> Moisturizes and protects.</li>
+      <li><strong>Olive Oil:</strong> Vitamin-rich nourishment.</li>
+      <li><strong>Turmeric:</strong> Antibacterial and anti-inflammatory.</li>
+      <li><strong>Herbal Extracts:</strong> Plant-based skin support.</li>
+    </ul>
+
+    <h2>How to Use</h2>
+    <ol>
+      <li>Wet your skin.</li>
+      <li>Lather the soap.</li>
+      <li>Massage in circles.</li>
+      <li>Rinse and pat dry.</li>
+      <li>Use daily.</li>
+    </ol>
+
+    <h2>Product Details</h2>
+    <ul>
+      <li><strong>Weight:</strong> 100g</li>
+      <li><strong>Shelf Life:</strong> 24 months</li>
+      <li><strong>Storage:</strong> Cool, dry place</li>
+      <li><strong>Packaging:</strong> Eco-friendly</li>
+    </ul>
+
+    <p class="footer-note">
+      Embrace a sustainable skincare routine with our Green Gram Soap.
+    </p>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 SV NATURALS. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function openModal(src) {
+      document.getElementById('modalImage').src = src;
+      document.getElementById('imageModal').style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('imageModal').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById("imageModal");
+      if (event.target === modal) {
+        closeModal();
+      }
+    };
+  </script>
+
+</body>
+</html>
